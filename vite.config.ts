@@ -12,7 +12,7 @@ export default defineConfig({
       '@pages': path.resolve(__dirname, './src/pages'),
       '@utils': path.resolve(__dirname, './src/utils'),
       '@api': path.resolve(__dirname, './src/api'),
-      '@types': path.resolve(__dirname, './src/types')
+      '@models': path.resolve(__dirname, './src/types')
     }
   },
   server: {

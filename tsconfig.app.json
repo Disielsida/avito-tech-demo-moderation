@@ -31,7 +31,7 @@
       "@pages/*": ["pages/*"],
       "@utils/*": ["utils/*"],
       "@api/*": ["api/*"],
-      "@types/*": ["types/*"]
+      "@models/*": ["types/*"]
     }
   },
   "include": ["src"]

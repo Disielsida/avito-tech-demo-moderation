@@ -43,3 +43,8 @@ export interface Pagination {
   totalItems: number;
   itemsPerPage: number;
 }
+
+export interface AdsListResponse {
+  ads: Advertisement[];
+  pagination: Pagination;
+}
