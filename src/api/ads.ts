@@ -1,4 +1,5 @@
 import type { AdStatus, AdsListResponse } from '@models/ads';
+import { apiRequest } from '@api/client';
 
 export interface GetAdsParams {
   page?: number;
@@ -49,13 +50,7 @@ export const getAds = async (
     searchParams.set('sortOrder', params.sortOrder);
   }
 
-  const response = await fetch(`/api/v1/ads?${searchParams.toString()}`, {
+  return apiRequest<AdsListResponse>(`/ads?${searchParams.toString()}`, {
     signal
   });
-
-  if (!response.ok) {
-    throw new Error('Не удалось загрузить объявления');
-  }
-
-  return response.json();
 };
