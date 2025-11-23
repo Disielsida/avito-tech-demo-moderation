@@ -10,7 +10,17 @@ export default defineConfig({
       '@app': path.resolve(__dirname, './src/app'),
       '@components': path.resolve(__dirname, './src/components'),
       '@pages': path.resolve(__dirname, './src/pages'),
-      '@utils': path.resolve(__dirname, './src/utils')
+      '@utils': path.resolve(__dirname, './src/utils'),
+      '@api': path.resolve(__dirname, './src/api'),
+      '@types': path.resolve(__dirname, './src/types')
+    }
+  },
+  server: {
+    proxy: {
+      'api/v1': {
+        target: 'http://localhost:3001',
+        changeOrigin: true
+      }
     }
   }
 });

@@ -29,7 +29,9 @@
       "@app/*": ["app/*"],
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@api/*": ["api/*"],
+      "@types/*": ["types/*"]
     }
   },
   "include": ["src"]
