@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { AdsListPage } from '../pages/adsListPage';
-import { ROUTES } from '../utils/routes';
+import { AdsListPage } from '@pages/adsListPage';
+import { ROUTES } from '@utils/routes';
 
 export const AppRouter = () => (
   <Routes>
